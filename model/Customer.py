@@ -22,6 +22,14 @@ class Customer:
     def get_email(self):
         return self._email
 
+    # def register_customer(self):
+    #     my_dict ={
+    #         "first_name": self._first_name,
+    #         "last_name": self._last_name,
+    #         "email": self._email
+    #     }
+
+
     def __str__(self):
         return f"""
         first_name: {self._first_name} 

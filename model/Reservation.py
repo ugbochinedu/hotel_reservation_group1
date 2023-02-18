@@ -12,3 +12,6 @@ class Reservation:
             room.create_room(room, check_in_date, check_out_date)
         else:
             print("unable to reserve room")
+
+    def make_reservation(self, room: IRoom, check_in_date: Date, check_out_date: Date):
+        my_dict = {}
