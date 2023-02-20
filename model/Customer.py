@@ -1,8 +1,18 @@
+import re
+
+
+def validate_email(input):
+    return bool(re.match(regex_formula, input))
+    pass
+
+
 class Customer:
     def __init__(self, first_name, last_name, email):
         self._first_name = first_name
         self._last_name = last_name
-        self._email = email
+        is_valid = validate_email(email)
+        if (is_valid):
+            self._email = email
 
     def set_first_name(self, first_name):
         self._first_name = first_name
@@ -17,8 +27,10 @@ class Customer:
         return self._last_name
 
     def set_gmail(self, email):
-        self._email = email
-
+        is_valid = validate_email(email)
+        if (is_valid):
+            self._email = email
+            
     def get_email(self):
         return self._email
 
