@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-<<<<<<< HEAD
-<<<<<<< HEAD
   <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.11 (venv)" project-jdk-type="Python SDK" />
-=======
+
   <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.11 (HotelReservation) (2)" project-jdk-type="Python SDK" />
->>>>>>> f8f447aa852feecf198bbafc8ed8235ce1088b2e
-=======
+
   <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.11" project-jdk-type="Python SDK" />
 
   <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.11 (HotelReservation) (2)" project-jdk-type="Python SDK" />
-
->>>>>>> 2e2cb7b2f91c023e5802bbb1a05cb55f93999664
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.11 (HotelReservation) (2)" project-jdk-type="Python SDK" />
 </project>

@@ -2,6 +2,10 @@ import enum
 
 
 class RoomType(enum.Enum):
+    SINGLE = "One Bed"
+    DOUBLE = "Two Beds"
+    EXECUTIVE = "Lounge Inclusive"
+
     SINGLE = 25000
     DOUBLE = 50000
     EXECUTIVE = 75000
@@ -19,3 +23,4 @@ class RoomType(enum.Enum):
         DOUBLE ROOM: {self.DOUBLE},      
         EXECUTIVE ROOM: {self.EXECUTIVE}      
         """
+

@@ -1,3 +1,6 @@
+from datetime import datetime, date
+
+
 class ReservationService:
 
     def __init__(self):
@@ -5,7 +8,7 @@ class ReservationService:
         self._room = IRoom()
         self._room_id: str = ""
         self._customer = Customer()
-        self._check_in_date = Date()
+        self._check_in_date = date.today()
         self._check_out_date = Date()
 
     def add_room(self, room):
