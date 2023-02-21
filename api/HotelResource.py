@@ -1,7 +1,10 @@
+
 class HotelResource:
 
     def __init__(self):
-        self._customer_reservation = None
+        self._customer_reservation = ReservationService()
+        self._customer = CustomerService()
+        
         self._check_out_date = None
         self._check_in_date = None
         self._room_number = None
@@ -21,8 +24,7 @@ class HotelResource:
         self._email = email
 
     def get_customer(self, customer_email):
-        self._customer_mail = customer_email  # if statement needed
-        return f"{self._first_name}, {self._last_name}"
+        return self._customer_service.get_customer(customer_email)
 
     def get_all_customers(self):
         pass
@@ -34,14 +36,12 @@ class HotelResource:
         self._check_out_date = check_out_date
 
     def get_room(self, room_number):
-        self._room_number = room_number  # if statement needed
-        return self._room_number
+        return self._reservation_service.get_room(room_number)
 
     def get_customer_reservations(self, customer_email):
-        self._customer_mail = customer_email  # if statement needed
-        return self._customer_reservation
+        return self._customer_reservation.get_customer_reservations(customer_email)
 
     def find_a_room(self, check_in, check_out):
-        self._check_in = check_in
-        self._check_out = check_out
+        self._check_in_date = check_in
+        self._check_out_date = check_out
         return self._findroom
