@@ -2,6 +2,6 @@ import enum
 
 
 class RoomType(enum.Enum):
-    Single = "One Bed"
+    SINGLE = "One Bed"
     DOUBLE = "Two Beds"
     EXECUTIVE = "Lounge Inclusive"
